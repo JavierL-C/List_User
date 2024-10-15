@@ -11,7 +11,7 @@ import SwiftUI
 final class UserListViewModel {
     
     let apiService: APIServiceProtocol
-    var users: [UserListElement] = []
+    var users: UserList = []
     var selectedUser: UserListElement?
     var isLoading: Bool = false
     var errorMessage: String?

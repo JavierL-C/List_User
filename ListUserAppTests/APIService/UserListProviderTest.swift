@@ -26,7 +26,7 @@ extension UserListProviderTest {
     func testSuccessCase_getUsers() async {
         do {
             let endPoint: UserListEndPoint = .getUsers
-            let users: [UserListElement] = try await apiService!.sendRequest(endpoint: endPoint)
+            let users: UserList = try await apiService!.sendRequest(endpoint: endPoint)
             XCTAssertTrue(users.first?.id == 1)
         } catch {
             XCTFail("Always receive a response and not throw an error")

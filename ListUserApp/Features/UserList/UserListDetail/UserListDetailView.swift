@@ -109,7 +109,7 @@ struct UserListDetailView: View {
 
 #Preview {
     let data = UserListMock.makeUserListJsonFake()
-    let user = try? JSONDecoder().decode([UserListElement].self, from: data)
+    let user = try? JSONDecoder().decode(UserList.self, from: data)
     let viewModel = UserListDetailVideModel(user: user!.first!)
     UserListDetailView(viewModel: viewModel)
 }
