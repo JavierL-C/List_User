@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct ListUserAppApp: App {
+    static let viewMdoel = UserListViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            UserListView(viewModel: ListUserAppApp.viewMdoel)
         }
     }
 }
