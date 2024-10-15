@@ -1,0 +1,33 @@
+# Archivos y directorios de Xcode
+build/
+DerivedData/
+*.xcworkspace
+xcuserdata/
+*.xcuserstate
+
+# Archivos de configuración personal
+*.xcuserdatad
+*.swp
+*~
+
+# Archivos de depuración
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Archivos de logs y estado
+*.log
+.DS_Store
+
+# Archivos generados por CocoaPods
+Pods/
+
+# Archivos generados por Carthage
+Carthage/
+
+# Archivos de Swift Package Manager
+.build/
+Package.resolved
+
+# Archivos de entorno
+.env
